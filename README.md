@@ -1,4 +1,6 @@
-<img align="center" src="assets/baka.svg">
+<div align="center">
+<img height="360" src="assets/baka.svg">
+</div>
 
 # Baka Theme for Milkdown
 
@@ -18,3 +20,5 @@ Currently, we are working on these goals.
 You may mentioned that those can't be covered by just one theme. That means with reaching them, we will put efforts on improving milkdown, too. Our final goal is provide users and developers this theme with milkdown together, either a third-party package or a community contributed official package.
 
 ## License
+
+This theme is licensed under the MIT License.
