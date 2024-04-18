@@ -14,7 +14,6 @@ Currently, we are working on these goals.
 
 - Iconify integration
 - Bundled Prism.js Themes
-- Preset with integrated two-column and code editor(Monaco and CodeMirror) support
 - More markdown customizing options
 
 You may mentioned that those can't be covered by just one theme. That means with reaching them, we will put efforts on improving milkdown, too. Our final goal is provide users and developers this theme with milkdown together, either a third-party package or a community contributed official package.
