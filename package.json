@@ -1,0 +1,67 @@
+{
+  "name": "milkdown-theme-baka",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    },
+    "./style.css": "./src/style.css"
+  },
+  "main": "./src/index.ts",
+  "publishConfig": {
+    "main": "./lib/index.es.js",
+    "types": "./lib/index.d.ts",
+    "exports": {
+      ".": {
+        "types": "./lib/index.d.ts",
+        "import": "./lib/index.es.js"
+      },
+      "./style.css": "./lib/style.css"
+    }
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "start": "concurrently -n es,dts \"vite build --watch\"  \"tsc --emitDeclarationOnly --watch\"",
+    "tsc": "tsc && echo",
+    "build": "tsc && vite build"
+  },
+  "peerDependencies": {
+    "@milkdown/core": "^7.2.0",
+    "@milkdown/ctx": "^7.2.0",
+    "@milkdown/prose": "^7.2.0"
+  },
+  "dependencies": {
+    "@types/jsdom": "^21.1.6",
+    "@types/node": "^20.12.7",
+    "clsx": "^2.0.0",
+    "tslib": "^2.5.0"
+  },
+  "devDependencies": {
+    "@milkdown/core": "^7.2.0",
+    "@milkdown/ctx": "^7.2.0",
+    "@milkdown/prose": "^7.2.0",
+    "@unocss/postcss": "^0.59.4",
+    "postcss": "^8.4.38",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "unocss": "^0.59.4",
+    "vite": "^5.2.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quank123wip/milkdown-theme-baka.git"
+  },
+  "keywords": [
+    "milkdown"
+  ],
+  "author": "quank123wip",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quank123wip/milkdown-theme-baka/issues"
+  },
+  "homepage": "https://github.com/quank123wip/milkdown-theme-baka#readme"
+}
