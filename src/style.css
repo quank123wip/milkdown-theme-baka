@@ -1,9 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .milkdown-theme-baka blockquote {
-  @apply not-italic font-serif border-l-4 border-blue pl-4;
+  @apply not-italic font-serif border-l-4 border-blue-500 pl-4;
 }
 
 .milkdown-theme-baka code {
-  @apply text-warmgray-950 font-mono font-normal;
+  @apply text-gray-950 font-mono font-normal;
 }
 
 .milkdown-theme-baka pre code {
@@ -23,7 +27,7 @@
   :where(ol > li):not(:where([class~="not-prose"] *))::marker,
 .milkdown-theme-baka.prose
   :where(ul > li):not(:where([class~="not-prose"] *))::marker {
-  @apply text-blue;
+  @apply text-blue-500;
 }
 
 .milkdown-theme-baka.prose

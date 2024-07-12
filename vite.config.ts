@@ -1,6 +1,5 @@
 import path from "path";
 import { defineConfig } from "vite";
-import UnoCSS from 'unocss/vite'
 import packageJson from "./package.json";
 
 const getPackageName = () => {
@@ -34,9 +33,6 @@ export default defineConfig({
       fileName: format => fileName[format],
     },
   },
-  plugins: [
-    UnoCSS(),
-  ],
   resolve: {
     alias: [
       { find: "@", replacement: path.resolve(__dirname, "src") },

@@ -1,7 +1,6 @@
-import UnoCSS from '@unocss/postcss'
-
 export default {
-  plugins: [
-    UnoCSS(),
-  ],
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
 }

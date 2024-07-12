@@ -5,7 +5,6 @@ import clsx from 'clsx'
 
 import '@milkdown/prose/view/style/prosemirror.css'
 import '@milkdown/prose/tables/style/tables.css'
-import 'virtual:uno.css'
 import './style.css'
 
 export function baka(ctx: Ctx): void {
